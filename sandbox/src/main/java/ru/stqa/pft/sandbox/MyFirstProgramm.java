@@ -1,17 +1,24 @@
 package ru.stqa.pft.sandbox;
 
 public class MyFirstProgramm {
-    public static void main(String[] args) {
-        hello("Vladimir");
-        hello("User");
-        hello("world");
+        public static void main(String[] args) {
+            hello("Vladimir");
+            hello("User");
+            hello("world");
 
-        Square s = new Square(5);
-        System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
+            Square s = new Square(5);
+            System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
 
-        Rectangle r = new Rectangle(4, 6);
-        System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " равна " + r.area());
-    }
+            Rectangle r = new Rectangle(4, 6);
+            System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " равна " + r.area());
+
+            Point p1 = new Point(-1, 3);
+
+
+            Point p2 = new Point(6, 2);
+
+            System.out.println(p1.distance(p2));
+        }
 
     public static void hello(String somebody) {
         System.out.println("Hello," + somebody + "!");
